@@ -9,8 +9,11 @@ import org.junit.runner.RunWith;
                     dryRun = false,
                     tags = "",
                     monochrome = true,
-                    plugin = {"pretty"})
+                    plugin = {"pretty",
+                    "json:target/reports/report.json",
+                    "json:target/reports/report.xml",
+                     "com.aventstack.extentreports.cucumber.adapter.ExtentCucumberAdapter:"},
+                     publish =true)
 
 public class TestRunner {
-
 }
